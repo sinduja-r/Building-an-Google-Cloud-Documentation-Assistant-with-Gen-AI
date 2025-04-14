@@ -1,12 +1,12 @@
-# Building-an-AWS-Documentation-Assistant-with-Gen-AI
-An Interactive assistant that fetches and summarizes official AWS documentation for any AWS service
+# Google Cloud Documentation Assistant with GenAI
+An Interactive assistant that fetches and summarizes official Google Cloud documentation for any Google cloud service
 
 ## Use Case:
-Many developers and cloud engineers face challenges navigating AWS documentation to troubleshoot or learn how to use a service. The documentation is vast, fragmented across many pages, and often requires specific search skills to get the right answer quickly.
+Many developers and cloud engineers face challenges navigating Google Cloud documentation to troubleshoot or learn how to use a service. The documentation is vast, fragmented across many pages, and often requires specific search skills to get the right answer quickly.
 
-## The Idea: **An AI-Powered AWS Documentation Assistant**
-This project leverages Generative AI + Web Search Integration to simplify AWS troubleshooting. Just type a natural language question like "How to create an EC2 instance?", and the assistant will:
-  - Search AWS docs using SerpAPI + Google
+## The Idea: **An AI-Powered Documentation Assistant**
+This project leverages Generative AI + Web Search Integration to simplify Cloud troubleshooting. Just type a natural language question like "How to create an GCS bucket?", and the assistant will:
+  - Search Google Cloud docs using SerpAPI + Google
   - Extract structured, step-by-step content
   - Format and present a concise, human-readable guide
 
@@ -15,12 +15,12 @@ This project leverages Generative AI + Web Search Integration to simplify AWS tr
 
 ### 1. Retrieval-Augmented Generation (RAG)
 Instead of hallucinating answers, the system:
-- Searches **live AWS docs** using SerpAPI (Google Search API)
+- Searches **live Google Cloud docs** using SerpAPI (Google Search API)
 - Extracts **relevant sections** (e.g., headings, steps, code blocks)
 - Generates **concise summaries** with clear formatting
 
 ### 2. Document Understanding
-AWS documentation uses complex HTML formats. This project uses:
+Google Cloud documentation uses complex HTML formats. This project uses:
 - `BeautifulSoup` to parse `<h1>`, `<h2>`, `<ol>`, `<p>` etc.
 - `Regex` and light NLP to clean formatting artifacts (e.g., weird unicode symbols)
 
