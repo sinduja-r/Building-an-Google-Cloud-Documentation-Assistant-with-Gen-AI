@@ -45,8 +45,11 @@ No more walls of raw text! The assistant formats answers into:
 What AWS service do you need help with? How to create an EC2 instance?
 
 Searching AWS documentation for: How to create an EC2 instance
+
 Found 3 relevant resources. Processing...
+
 Extracting content from: [URL of AWS doc]
+
 ...
 
 
