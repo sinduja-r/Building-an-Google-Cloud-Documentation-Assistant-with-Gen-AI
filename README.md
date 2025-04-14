@@ -34,7 +34,7 @@ No more walls of raw text! The assistant formats answers into:
 
 | Tool/Library            | Purpose                                                                 |
 |-------------------------|-------------------------------------------------------------------------|
-| `requests`              | API calls to SerpAPI and to fetch HTML from AWS docs                    |
+| `requests`              | API calls to SerpAPI and to fetch HTML from Google CLoud docs           |
 | `BeautifulSoup (bs4)`   | Parse and extract structured documentation sections                     |
 | `re`                    | Clean up noisy formatting and unicode                                   |
 | `kaggle_secrets`        | Secure access to SerpAPI key in Kaggle environments                     |
