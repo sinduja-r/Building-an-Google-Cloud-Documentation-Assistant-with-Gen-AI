@@ -2,6 +2,12 @@
 
 Welcome to the **AWS Documentation Assistant** project! This tool is designed to help cloud engineers, developers, and learners quickly access and understand AWS documentation by fetching and summarizing it into concise, actionable guides.
 
+Explore the documentation, code snippets, and project insights.
+
+- [Project Overview](./index.md)
+- [Code Snippets](./code-snippets.md)
+- [Step-by-Step Guide](./guide.md)
+
 ## What is AWS Documentation Assistant?
 
 Navigating AWS's vast documentation can be challenging, especially when you need specific information. The **AWS Documentation Assistant** leverages **Generative AI (GenAI)** to provide real-time summaries of AWS service documentation based on user queries.
