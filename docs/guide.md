@@ -38,3 +38,17 @@ No more walls of raw text! The assistant formats answers into:
 | `BeautifulSoup (bs4)`   | Parse and extract structured documentation sections                     |
 | `re`                    | Clean up noisy formatting and unicode                                   |
 | `kaggle_secrets`        | Secure access to SerpAPI key in Kaggle environments                     |
+
+
+## Example interaction:
+
+What AWS service do you need help with? How to create an EC2 instance?
+
+Searching AWS documentation for: How to create an EC2 instance
+Found 3 relevant resources. Processing...
+Extracting content from: [URL of AWS doc]
+...
+
+
+## Conclusion
+The AWS Documentation Assistant leverages the power of Generative AI to automate the process of searching, understanding, and summarizing vast AWS documentation. This assistant can significantly reduce the time developers and cloud engineers spend navigating complex documents and troubleshooting issues.
