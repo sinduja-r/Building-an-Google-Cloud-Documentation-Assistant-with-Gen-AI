@@ -49,22 +49,5 @@ The project utilizes the following technologies:
 | `re`                      | Cleans noisy formatting and unicode artifacts                                |
 | `kaggle_secrets`          | Secures access to the SerpAPI key in Kaggle environments                      |
 
-## How It Works: Gen AI Under the Hood
-
-### 1. **Retrieval-Augmented Generation (RAG)**
-The system:
-- Searches **live AWS docs** using **SerpAPI** (Google Search API).
-- Extracts **relevant sections** (e.g., headings, steps, code blocks).
-- Generates **concise summaries** with clear formatting.
-
-### 2. **Document Understanding**
-- Uses **BeautifulSoup** to parse HTML and extract headings, lists, and key paragraphs.
-- Uses **Regex** and light NLP to clean up noisy formatting and unwanted symbols.
-
-### 3. **Structured Output Generation**
-The assistant formats answers into:
-- **Numbered steps** for easy following.
-- **Section headers** to organize the content.
-- **Bullet points** for concise instructions.
 
 **Enjoy using the AWS Documentation Assistant!**
