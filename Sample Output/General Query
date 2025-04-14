@@ -1,0 +1,38 @@
+What AWS service do you need help with?  What are the Storage options available
+
+Searching AWS documentation for: What are the Storage options available
+Found 3 relevant resources. Processing...
+Extracting content from: https://aws.amazon.com/products/storage/
+Extracting content from: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/storage-services.html
+
+
+ AWS WHAT ARE THE STORAGE OPTIONS AVAILABLE GUIDE 
+ ==================================================
+            
+Storage:
+- AWS provides a broad portfolio of storage services with deep functionality for storing, accessing, protecting, and analyzing your data.
+- Each service is described after the diagram. To help you decide which service best meets your needs, see Choosing an AWS storage service . For general information, see Cloud Storage on AWS .
+
+AWS Backup:
+- AWS Backup enables you to centralize and automate data protection across AWS services. AWS Backup offers a cost-effective, fully managed, policy-based service that further simplifies data protection at scale. AWS Backup also helps you support your
+   regulatory compliance or business policies for data protection. Together with AWS Organizations, AWS Backup enables you to centrally deploy data protection policies to configure, manage, and govern your
+   backup activity across your organizationâs AWS accounts and resources, including Amazon Elastic Compute Cloud (Amazon EC2) instances, Amazon Elastic Block Store (Amazon EBS) volumes, Amazon Relational Database Service (Amazon RDS) databases (including Amazon Aurora
+   clusters), Amazon DynamoDB tables, Amazon Elastic File System (Amazon EFS) file systems, Amazon FSx for Lustre file systems, Amazon FSx for Windows File Server file systems, and AWS Storage Gateway volumes.
+
+Amazon Elastic Block Store:
+- Amazon Elastic Block Store (Amazon EBS) provides persistent block storage volumes for use with Amazon EC2 instances in the AWS Cloud. Each Amazon EBS volume is automatically replicated within its Availability Zone to protect you from component failure, offering high
+   availability and durability. Amazon EBS volumes offer the consistent and low-latency performance needed to run your workloads. With Amazon EBS, you can scale your usage up or down within minutes--all
+   while paying a low price for only what you provision.
+
+AWS Elastic Disaster Recovery:
+- AWS Elastic Disaster Recovery (Elastic Disaster Recovery) minimizes downtime and data loss with fast, reliable recovery of on-premises and cloud-based applications using affordable storage, minimal compute, and point-in-time recovery. You can configure replication
+   and launch settings, monitor data replication, and launch instances for drills or recovery.
+- Set up Elastic Disaster Recovery on your source servers to initiate secure data replication. Your data is replicated to a staging area subnet in your AWS account, in the AWS Region that you select.
+   You can perform non-disruptive tests to confirm that implementation is complete. During normal operation, maintain readiness by monitoring replication and periodically performing non-disruptive recovery and failback drills.
+- If you must replicate to the AWS China Regions or perform replication and recovery into AWS Outposts, use CloudEndure Disaster Recovery available in the AWS Marketplace.
+
+Amazon Elastic File System:
+- Amazon Elastic File System (Amazon EFS) provides a simple, scalable, elastic
+     
+ ================================================== 
+ # Check the links provided above for more details
