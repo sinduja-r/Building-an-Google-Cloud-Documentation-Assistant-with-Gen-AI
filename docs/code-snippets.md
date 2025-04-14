@@ -27,7 +27,8 @@ def search_aws_docs(query):
     
     except Exception as e:
         print(f"Search error: {e}")
-        return []```
+        return []
+```
 
 Explanation:
 This function uses SerpAPI to search AWS documentation for a given query. It returns the top 3 links from the search results.
@@ -72,7 +73,8 @@ def extract_service_guide(url):
         
     except Exception as e:
         print(f"Extraction error: {e}")
-        return ""```
+        return ""
+```
 
 Explanation:
 This function uses BeautifulSoup to parse the AWS documentation HTML, extracting key sections like headings, steps, and paragraphs.
@@ -97,7 +99,8 @@ def format_aws_summary(query, content):
     # Structure the output
     service_name = query.replace('AWS', '').replace('Amazon', '').strip()
     return f"""\n\n AWS {service_name.upper()} GUIDE \n {"=" * 50}
-            {content[:3000]}  \n {"=" * 50} \n # Check the links provided above for more details"""```
+            {content[:3000]}  \n {"=" * 50} \n # Check the links provided above for more details"""
+```
 
 Explanation:
 This function formats the extracted content into a structured and concise guide, cleaning up common formatting issues and ensuring it’s human-readable.
