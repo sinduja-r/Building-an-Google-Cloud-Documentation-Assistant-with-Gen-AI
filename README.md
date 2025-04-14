@@ -99,7 +99,7 @@ Amazon Elastic File System:
 - Amazon Elastic File System (Amazon EFS) provides a simple, scalable, elastic
      
  ================================================== 
- # Check the links provided above for more details
+Check the links provided above for more details
 
 
 ##  Example Usage 2: 
@@ -166,6 +166,6 @@ When I attempt to call the
 - iam:AddRoleToInstanceProfile with the resource matching the instance
           profile ARN (for example, arn:aws:iam::9  
  ================================================== 
- # Check the links provided above for more details
+Check the links provided above for more details
 
  
