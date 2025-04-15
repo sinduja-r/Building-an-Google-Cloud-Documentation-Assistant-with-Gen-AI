@@ -2,6 +2,9 @@
 
 Welcome to the **Google Cloud Documentation Assistant** project! This interactive tool is built for developers, cloud engineers, and learners to effortlessly fetch and summarize official **Google Cloud Platform (GCP)** documentation — all using the power of **Generative AI + Web Search**.
 
+- [Guide](guide.md)
+- [Code Snippets](code-snippets.md)
+
 ## Table of Contents
 
 - [What is This?](#-what-is-this)
