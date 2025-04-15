@@ -1,38 +1,43 @@
-What AWS service do you need help with?  What are the Storage options available
+What Google Cloud service do you need help with?  log based metric
 
-Searching AWS documentation for: What are the Storage options available
-Found 3 relevant resources. Processing...
-Extracting content from: https://aws.amazon.com/products/storage/
-Extracting content from: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/storage-services.html
+Searching Google Cloud docs for: log based metric
+Reviewing: https://cloud.google.com/logging/docs/logs-based-metrics
+Reviewing: https://cloud.google.com/stackdriver/docs/solutions/slo-monitoring/sli-metrics/logs-based-metrics
 
-
- AWS WHAT ARE THE STORAGE OPTIONS AVAILABLE GUIDE 
- ==================================================
-            
-Storage:
-- AWS provides a broad portfolio of storage services with deep functionality for storing, accessing, protecting, and analyzing your data.
-- Each service is described after the diagram. To help you decide which service best meets your needs, see Choosing an AWS storage service . For general information, see Cloud Storage on AWS .
-
-AWS Backup:
-- AWS Backup enables you to centralize and automate data protection across AWS services. AWS Backup offers a cost-effective, fully managed, policy-based service that further simplifies data protection at scale. AWS Backup also helps you support your
-   regulatory compliance or business policies for data protection. Together with AWS Organizations, AWS Backup enables you to centrally deploy data protection policies to configure, manage, and govern your
-   backup activity across your organizationâs AWS accounts and resources, including Amazon Elastic Compute Cloud (Amazon EC2) instances, Amazon Elastic Block Store (Amazon EBS) volumes, Amazon Relational Database Service (Amazon RDS) databases (including Amazon Aurora
-   clusters), Amazon DynamoDB tables, Amazon Elastic File System (Amazon EFS) file systems, Amazon FSx for Lustre file systems, Amazon FSx for Windows File Server file systems, and AWS Storage Gateway volumes.
-
-Amazon Elastic Block Store:
-- Amazon Elastic Block Store (Amazon EBS) provides persistent block storage volumes for use with Amazon EC2 instances in the AWS Cloud. Each Amazon EBS volume is automatically replicated within its Availability Zone to protect you from component failure, offering high
-   availability and durability. Amazon EBS volumes offer the consistent and low-latency performance needed to run your workloads. With Amazon EBS, you can scale your usage up or down within minutes--all
-   while paying a low price for only what you provision.
-
-AWS Elastic Disaster Recovery:
-- AWS Elastic Disaster Recovery (Elastic Disaster Recovery) minimizes downtime and data loss with fast, reliable recovery of on-premises and cloud-based applications using affordable storage, minimal compute, and point-in-time recovery. You can configure replication
-   and launch settings, monitor data replication, and launch instances for drills or recovery.
-- Set up Elastic Disaster Recovery on your source servers to initiate secure data replication. Your data is replicated to a staging area subnet in your AWS account, in the AWS Region that you select.
-   You can perform non-disruptive tests to confirm that implementation is complete. During normal operation, maintain readiness by monitoring replication and periodically performing non-disruptive recovery and failback drills.
-- If you must replicate to the AWS China Regions or perform replication and recovery into AWS Outposts, use CloudEndure Disaster Recovery available in the AWS Marketplace.
-
-Amazon Elastic File System:
-- Amazon Elastic File System (Amazon EFS) provides a simple, scalable, elastic
-     
- ================================================== 
- # Check the links provided above for more details
+GOOGLE CLOUD LOG BASED METRIC GUIDE
+============================================================
+## Sources of log-based metrics
+• You can use the metrics defined by Cloud Logging to collect general usage
+information, and you can define your own log-based metric to capture information
+specific to your application or business.
+• Log-based metrics can apply within a single Google Cloud project or within a log
+bucket. You can't create
+log-based metrics for other Google Cloud resources such as
+Cloud Billing accounts or organizations.
+• For information about the differences between project-based log-based metrics
+and bucket-based log-based metrics, see Bucket-scoped log-based metrics .
+• Logging provides a set of metrics for usage values such as the
+number of log entries stored in log buckets in your project, or
+the number of bytes you've exported.
+For a complete list of system-defined metrics, see Google Cloud metrics: logging .
+• You can create user-defined log-based metrics to
+track other metrics that are important for your project. For
+example, you might create a log-based metric to count the number of log
+entries that match a given filter.
+• By default, user-defined log-based metrics are calculated from all logs
+received by the Logging API for the Google Cloud project,
+regardless of any inclusion filters or exclusion filters that might apply to the
+Google Cloud project.
+• You can also create user-defined log-based metrics
+for a specific log bucket in a Google Cloud project. Bucket-scoped
+log-based metrics are calculated from all logs destined for the bucket,
+regardless of where they originated. For more information see Log-based metrics on log buckets .
+• Log-based metrics can extract data from logs to create metrics of the
+following types:
+  - Counter: these metrics count the number of log entries that match a
+specified filter within a specific period. Use counters when you want to keep
+track of the number of times a value or string appears in your logs.
+  - Distribution: these metrics also count values, but they collect the
+counts into ranges of values ( hist
+============================================================
+Full documentation: https://cloud.google.com/log-based-metric
