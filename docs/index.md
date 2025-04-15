@@ -12,8 +12,6 @@ Welcome to the **Google Cloud Documentation Assistant** project! This interactiv
 - [How It Works](#-how-it-works)
 - [Project Structure](#-project-structure)
 - [Tech Stack](#-tech-stack)
-- [Try It Out](#-try-it-out)
-
 
 ## What is This?
 
@@ -67,6 +65,8 @@ Navigating Google Cloud documentation can be overwhelming — scattered across m
 | `re`                      | Cleansing formatting artifacts and refining output                      |
 | `kaggle_secrets`          | Secure access to API keys on Kaggle                                     |
 | `SerpAPI`                 | Search API used to query live Google documentation                      |
+
+
 
 
 **Enjoy using the Google Cloud Documentation Assistant!**
