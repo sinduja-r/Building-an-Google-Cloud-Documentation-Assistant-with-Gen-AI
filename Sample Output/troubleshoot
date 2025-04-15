@@ -1,46 +1,46 @@
-What AWS service do you need help with?  Troubleshooting steps for IAM permission issue in EC2 instance
+What Google Cloud service do you need help with?  troubleshoot Network loadbalancer
 
-Searching AWS documentation for: Troubleshooting steps for IAM permission issue in EC2 instance
-Found 3 relevant resources. Processing...
-Extracting content from: https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_iam-ec2.html
-Extracting content from: https://aws.amazon.com/premiumsupport/knowledge-center/kms-iam-ec2-permission/
+Searching Google Cloud docs for: troubleshoot network loadbalancer
+Reviewing: https://cloud.google.com/load-balancing/docs/internal/troubleshooting-ilb
+Reviewing: https://cloud.google.com/load-balancing/docs/network/troubleshooting-networklb
 
-
- AWS TROUBLESHOOTING STEPS FOR IAM PERMISSION ISSUE IN EC2 INSTANCE GUIDE 
- ========================================================================
-            
-Troubleshoot IAM and Amazon EC2:
-- The following information can help you troubleshoot IAM issues with Amazon EC2.
-- When I try to launch an instance, I don't
-        see the role in the Amazon EC2 console IAM Role list
-- When I attempt to call the
-          AddRoleToInstanceProfile, I get an AccessDenied error
-- Amazon EC2: When I try to launch an
-        instance with a role, I get an AccessDenied error
-- I can't access the temporary security
-        credentials on my EC2 instance
-- What do the errors from the
-          info document in the IAM subtree mean?
-
-When I try to launch an instance, I don't
-        see the role in the Amazon EC2 console IAM Role list:
-- If you are signed in as an IAM user, verify that you have permission to call ListInstanceProfiles . For information about the permissions necessary to work with roles, see Permissions required for using roles
-        with Amazon EC2 . For information about adding permissions to a user, see Manage IAM policies .
-- If you cannot modify your own permissions, you must contact an administrator who can work with IAM in order to update your permissions.
-- If you created a role using the IAM CLI or API, verify the following:
-- You created an instance profile and added the role to that instance profile.
-- You used the same name for the role and the instance profile. If you name your role and instance profile differently, you won't see the correct role name in the Amazon EC2 console.
-- The IAM Role list in the Amazon EC2 console lists the names of instance profiles, not the names of roles. You will have to select the name of the instance profile that contains the role you want. For details about instance profiles, see Use instance profiles.
-- If you use the IAM console to create roles, you don't need to work with instance profiles. For each role that you create in the IAM console, an instance profile is created with the same name as the role, and the role is automatically added to that instance profile. An instance profile can contain only one IAM role, and that limit cannot be increased.
-
-The credentials on my instance are for the wrong role:
-- The role in the instance profile might have been replaced recently. If so, your application will need to wait for the next automatically scheduled credential rotation before credentials for your role become available.
-- To force the change, you must disassociate the instance profile and then associate the instance profile , or you can stop your instance and then restart it.
-
-When I attempt to call the
-          AddRoleToInstanceProfile, I get an AccessDenied error:
-- If you are making requests as an IAM user, verify that you have the following permissions:
-- iam:AddRoleToInstanceProfile with the resource matching the instance
-          profile ARN (for example, arn:aws:iam::9  
- ================================================== 
-Check the links provided above for more details
+GOOGLE CLOUD TROUBLESHOOT NETWORK LOADBALANCER GUIDE
+============================================================
+## Troubleshoot common issues with Network Analyzer
+• Network Analyzer automatically monitors your VPC network configuration and detects
+both suboptimal configurations and misconfigurations. It identifies network
+failures, provides root cause information, and suggests possible resolutions. To
+learn about the different misconfiguration scenarios that are automatically
+detected by Network Analyzer, see Load balancer insights in the Network Analyzer documentation. Network Analyzer is available in the Google Cloud console as a part of
+Network Intelligence Center. Go to Network Analyzer
+• When creating a load balancer, you might see the error:
+• This happens when you try to use the same backend in two different load
+balancers, and the backends don't have compatible balancing modes.
+• For more information, see the following:
+  - Restrictions and guidance for instance
+groups
+  - Change the balancing mode of a load
+balancer
+• If you can't connect to your internal passthrough Network Load Balancer, check for the following common
+issues.
+  - Ensure that ingress allow firewall
+rules are defined to
+permit health checks to backend VMs.
+  - Ensure that ingress allow firewall rules allow traffic
+to the backend VMs from clients.
+  - Ensure that relevant firewall rules exist to allow traffic to reach the
+backend VMs on the ports being used by the load balancer.
+  - If you're using target tags for the firewall
+rules , make
+sure that the load balancer's backend VMs are tagged appropriately.
+• To learn how to configure firewall rules required by your internal passthrough Network Load Balancer,
+see Configuring firewall
+rules .
+• If you can connect to a healthy backend VM, but cannot connect to the load
+balancer, it might be that the Guest environment (formerly, the Windows Guest Environment or Linux Guest Environment)
+on the VM is either not running or is unable to communicate with the metadata
+server ( metadata.google.internal , 169.254.169.254 ).
+• Check for the following:
+  - Ensure 
+============================================================
+Full documentation: https://cloud.google.com/troubleshoot-network-loadbalancer
