@@ -24,7 +24,7 @@ def search_aws_docs(query):
     results = response.json()
 ```
 
-Explanation:
+*Explanation:*
 This function uses SerpAPI to search Google Cloud documentation for a given query.  It fetches the URLs of the best matches from Google Cloud documentation.
 
 ## 2. Extracting Content from AWS Docs
@@ -104,7 +104,7 @@ def extract_cloud_content(url):
         return None, None
 ```
 
-Explanation:
+*Explanation:*
 This function is used to process a page from Google Cloud documentation and extract important information, such as CLI commands, IAM roles, and general guidelines.
  - Fetches the HTML content from a provided URL.
  - Uses BeautifulSoup to parse and clean the document by removing unnecessary elements like navigation, headers, and footers.
@@ -132,7 +132,7 @@ Full documentation: {links.pop() if links else default_link}
 """
 ```
 
-Explanation:
+*Explanation:*
 This function is used to create a clean, readable summary of Google Cloud documentation that can be shown to users after processing their queries.
    - Takes the extracted content and formats it into a structured summary.
    - Highlights the title of the query (e.g., "CREATE BUCKET GUIDE").
@@ -183,7 +183,8 @@ For specific documentation, please visit: https://cloud.google.com/{query.replac
             print(summary)
 ```
 
-Explanation: This function serves as the main entry point for the user to interact with the assistant, allowing them to ask for help with any Google Cloud service.
+*Explanation:*
+This function serves as the main entry point for the user to interact with the assistant, allowing them to ask for help with any Google Cloud service.
     - Provides a CLI assistant that prompts the user for a query regarding Google Cloud services.
     - Searches Google Cloud documentation, extracts relevant content, and formats it into a user-friendly summary.
     - If no results are found, it displays a default generic service description.
